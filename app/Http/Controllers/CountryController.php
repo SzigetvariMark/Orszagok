@@ -17,4 +17,14 @@ class CountryController extends Controller
 
         return view('index', compact('country'));
     }
+    public function filter(Request $request)
+    {
+        $selectedRegions = $request->only(['europa', 'azsia', 'afrika', 'amerika', 'ausztralia', 'oceania']);
+
+        $countries = Country::whereIn('foldres', array_keys(array_filter($selectedRegions)))->get();
+
+        return view('index', compact('countries'));
+    }
 }
+
+

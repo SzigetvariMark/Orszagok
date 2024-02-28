@@ -14,6 +14,23 @@
       <select><option>legnagyobb</option></select>
       <select><option>területű</option></select>ország<select><option>a világon</option></select>:
       <input type="text" placeholder="irj ide egy országot" />
+
+      <form action="{{ route('filterCountries') }}" method="POST">
+    @csrf
+    <div>
+        <input type="checkbox" id="europa" name="europa" />
+        <label for="europa">Európa</label>
+    </div>
+    <!-- További checkbox-ok a többi földrészhez -->
+    <button type="submit">Keresés</button>
+</form>
+
+
+
+
+
+
+      
       <h2>Földrészek adatai:</h2>
       <div>
         <input type="checkbox" id="europa" name="europa" />
@@ -42,10 +59,10 @@
       <div>
         <p>A kiválasztott földrészek:</p>
         <ul>
-          <li>194 darab országnak ad(nak) otthont.</li>
-          <li>Területe: 133.60 millió km²</li>
-          <li>Népessége: 6271.57 millió fő</li>
-          <li>Népsűrűsége: 46.94 fő/km²</li>
+          <li> darab országnak ad(nak) otthont.</li>
+          <li>Területe: km²</li>
+          <li>Népessége: fő</li>
+          <li>Népsűrűsége: /km²</li>
         </ul>
       </div>
       <br>

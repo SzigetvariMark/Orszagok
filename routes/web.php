@@ -20,3 +20,5 @@ Route::get('/', function () {
     return view('index');
 });
 Route::get('/search', [CountryController::class, 'search'])->name('search');
+Route::post('/filter-countries', [CountryController::class, 'filter'])->name('filterCountries');
+Route::get('/countries', [CountryController::class, 'index']);
