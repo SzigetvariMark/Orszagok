@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+   
+  .context {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+   
+  h2 {
+    margin-top: 0;
+  }
+   
+  p {
+    margin-bottom: 10px;
+  }
+   
+  .bold {
+    font-weight: bold;
+  }
+   
+  .orszag {
+    margin-left: 3rem;
+  }
+   
