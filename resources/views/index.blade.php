@@ -52,7 +52,7 @@
 <form method="GET" action="{{ route('search') }}">
     <label for="country_name">Ország keresése:</label>
     <input type="text" id="country_name" name="country_name">
-    <button type="submit">Keresés</button>
+    <button type="submit">?</button>
 </form>
 
 @if(isset($country))
